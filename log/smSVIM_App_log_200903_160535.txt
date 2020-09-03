@@ -1,0 +1,22 @@
+2020-09-03T16:05:49|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\OPT\anaconda3\envs\ScopeFoundry\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\Users\OPT\anaconda3\envs\ScopeFoundry\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "D:\LabPrograms\ScopeFoundry_POLIMI\DMD_ScopeFoundry\DMDHardware.py", line 57, in connect
+    self.dmd.stopsequence()
+  File "D:\LabPrograms\ScopeFoundry_POLIMI\DMD_ScopeFoundry\DMDDeviceHID.py", line 171, in stopsequence
+    self.command('w',0x00,0x1a,0x24,[0])
+  File "D:\LabPrograms\ScopeFoundry_POLIMI\DMD_ScopeFoundry\DMDDeviceHID.py", line 69, in command
+    self.device.write(buffer)
+  File "C:\Users\OPT\anaconda3\envs\ScopeFoundry\lib\site-packages\hid\__init__.py", line 155, in write
+    return self.__hidcall(hidapi.hid_write, self.__dev, data, len(data))
+  File "C:\Users\OPT\anaconda3\envs\ScopeFoundry\lib\site-packages\hid\__init__.py", line 142, in __hidcall
+    ret = function(*args, **kwargs)
+ctypes.ArgumentError: argument 2: <class 'TypeError'>: wrong type
+
+2020-09-03T16:07:22|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\OPT\anaconda3\envs\ScopeFoundry\lib\site-packages\ScopeFoundry\helper_funcs.py", line 135, in eventFilter
+    def eventFilter(self, obj, event):
+KeyboardInterrupt
+

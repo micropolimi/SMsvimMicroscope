@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1718</width>
+    <height>1256</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>13</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="plot_groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>1701</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>4777215</width>
+     <height>4777215</height>
+    </size>
+   </property>
+   <property name="title">
+    <string>Measurement</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout"/>
+  </widget>
+  <widget class="QGroupBox" name="Live_groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>790</y>
+     <width>1711</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Settings and measurement</string>
+   </property>
+   <widget class="QLabel" name="label_min">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>63</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>white level</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_max">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>black level</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="min_doubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>90</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="autoLevels_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>autoLevels</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="autoRange_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>autoRange</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="max_doubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>60</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="dmd_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>10</y>
+      <width>711</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>4777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>DMD</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="5" column="0">
+      <widget class="QLineEdit" name="input_directory_lineEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QDoubleSpinBox" name="exposure_doubleSpinBox"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QCheckBox" name="all_checkBox">
+       <property name="text">
+        <string>All png</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QDoubleSpinBox" name="starting_point_doubleSpinBox"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>starting_point, step, number of png</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QDoubleSpinBox" name="max_number_doubleSpinBox"/>
+     </item>
+     <item row="10" column="0">
+      <widget class="QDoubleSpinBox" name="step_doubleSpinBox"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="connected_checkBox_2">
+       <property name="text">
+        <string>Connected</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="search_pushButton">
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>input_directory</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>exposure</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="pattern_groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>631</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>4777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>Camera</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="connected_checkBox">
+       <property name="text">
+        <string>Connected</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>frame_exposure_time</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QDoubleSpinBox" name="exposure_time_doubleSpinBox"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>exposure_time</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>internal_line_interval</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>sensor_mode</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QComboBox" name="sensor_mode_comboBox">
+       <item>
+        <property name="text">
+         <string>area</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>progressive</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QDoubleSpinBox" name="internal_line_interval_doubleSpinBox"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QDoubleSpinBox" name="frame_exposure_time_doubleSpinBox">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QProgressBar" name="progress_progressBar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>301</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>rotate_image</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="rotate_image_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>69</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>90</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>180</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>270</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="start_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>191</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start Measurement</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="interrupt_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>20</y>
+     <width>191</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Interrupt</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
